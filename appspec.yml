@@ -6,8 +6,13 @@ files:
 permissions:
   - object: /myapp/startApp.sh
     mode: 777
+  - object: /myapp/stopApp.sh
+    mode: 777
 #don't know why below were commented out, i tried uncommented it, the application did started, but CodeDeploy stuck waiting why?
+#i think i know why, once the startApp.sh is called, there is no one going to stop it so subsequent startApp.sh returns error
 hooks:
   ApplicationStart:
+    - location: stopApp.sh
+      timeout: 10
     - location: startApp.sh
       timeout: 10
