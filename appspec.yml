@@ -14,7 +14,7 @@ permissions:
 #maybe i need a ValidateService: hook?? but the status seems to be that it stuck at ApplicationStart without any advancement why?
 hooks:
   ApplicationStart:
-    - location: stopApp.sh
-      timeout: 10
+    #- location: stopApp.sh
+    #  timeout: 10
     - location: startApp.sh
       timeout: 10
