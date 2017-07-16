@@ -6,4 +6,6 @@ export DB_PRD_PASS=spidertutorial
 export NODE_HOST=localhost
 export NODE_PORT=8080
 node /myapp/index.js&
+echo startApp exiting > /tmp/startAppLog.log
+echo `date` > /tmp/startAppLog.log
 exit 0
