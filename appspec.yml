@@ -10,6 +10,8 @@ permissions:
     mode: 777
 #don't know why below were commented out, i tried uncommented it, the application did started, but CodeDeploy stuck waiting why?
 #i think i know why, once the startApp.sh is called, there is no one going to stop it so subsequent startApp.sh returns error
+#see: http://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-example.html
+#maybe i need a ValidateService: hook?? but the status seems to be that it stuck at ApplicationStart without any advancement why?
 hooks:
   ApplicationStart:
     - location: stopApp.sh
