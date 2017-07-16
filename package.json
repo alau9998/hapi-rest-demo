@@ -4,7 +4,8 @@
   "description": "A SpiderTutorial Demo project",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha test/**/*.js"
+    "test": "istanbul cover _mocha test/**/*.js",
+    "test2": ""
   },
   "repository": {
     "type": "git",
