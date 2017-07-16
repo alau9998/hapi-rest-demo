@@ -1,5 +1,5 @@
 #!/bin/sh
-export NODE_ENV=production
+export NODE_ENV=production 
 export DB_PRD_HOST=spidertutorial-postgresql.c3t4eosxhuox.us-west-2.rds.amazonaws.com
 export DB_PRD_USER=spidertutorial
 export DB_PRD_PASS=spidertutorial
